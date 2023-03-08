@@ -1,0 +1,43 @@
+scoop bucket add extras
+scoop install git
+scoop install xampp
+scoop search code
+scoop install vcode
+이후 추가 설치하라는 거 다 설치하기
+
+xampp 설정
+\user\scoop\apps\xampp\8.2.0-0
+
+
+DB와 DBMS란...?
+SQL이란...?
+
+xampp 사용법
+localhost 주소창에 입력
+phpmyAdmin 클릭
+
+sql 란에서 명령어를 통해 각종 활동 가능
+---------------------------
+powershell 혹은 cmd 란에서 사용법
+
+-접속-  
+   mysql -u root -p  패스워드 설정 시 패스워드 입력
+
+이후 sql 명령어 입력 시 phpmyadmin의 sql 창과 동일하게 출력 (구분자 입력하길 " ; " )
+
+show tables - 테이블 목록 표시
+
+select * from user;
+	select * - 모든 컬럼 가져오기  ( *은 필드 내에 있는 항목을 기입 (중복으로 기입 가능하다) )
+	from user - 테이블 이름 접근  ( user은 필드 내의 해당 테이블 기입 )
+---ex
+select Host, User, Password from user where user='pma';
+필드 ( Host, User, Password )들중에서 user 테이블의 user 'pma'에 대해 접근
+
+
+desc user 데이터 필드 가져오기  (desc로 항상 현황 파악하기)
+
+
+
+
+
